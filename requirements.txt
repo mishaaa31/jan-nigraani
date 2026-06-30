@@ -7,4 +7,3 @@ transformers
 folium
 requests
 sentencepiece
-opencv-python-headless
