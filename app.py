@@ -23,69 +23,68 @@ st.set_page_config(page_title="Jan-Nigraani", layout="wide")
 st.markdown("""
 <style>
     /* Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
     
     html, body, [class*="css"]  {
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Inter', sans-serif;
     }
     
-    /* Modern Headers with Gradients */
+    /* Professional Headers */
     h1, h2, h3 {
-        background: -webkit-linear-gradient(45deg, #00F0FF, #0057FF);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 800;
+        color: #1E293B;
+        font-weight: 700;
         letter-spacing: -0.5px;
+        margin-bottom: 1rem;
     }
     
-    /* Sleek Glow Buttons */
+    /* Clean Trustworthy Buttons */
     .stButton>button {
-        background: linear-gradient(90deg, #00F0FF 0%, #0057FF 100%);
+        background-color: #2563EB;
         color: white;
-        border-radius: 12px;
-        padding: 0.6rem 1.2rem;
-        border: none;
-        box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
-        transition: all 0.3s ease-in-out;
+        border-radius: 6px;
+        padding: 0.5rem 1.5rem;
+        border: 1px solid #1D4ED8;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
         font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        transition: all 0.2s;
     }
     .stButton>button:hover {
-        transform: translateY(-3px) scale(1.02);
-        box-shadow: 0 0 25px rgba(0, 240, 255, 0.7);
+        background-color: #1D4ED8;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     }
     
-    /* Glassmorphism Metric Cards */
+    /* Crisp Metric Cards */
     div[data-testid="metric-container"] {
-        background: rgba(18, 18, 18, 0.7);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 20px;
-        border-radius: 16px;
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        transition: transform 0.3s ease;
+        background-color: #FFFFFF;
+        border: 1px solid #E2E8F0;
+        padding: 1.2rem;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        border-left: 4px solid #2563EB;
     }
-    div[data-testid="metric-container"]:hover {
-        transform: translateY(-5px);
-        border: 1px solid rgba(0, 240, 255, 0.3);
+    div[data-testid="metric-container"] label {
+        color: #64748B !important;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+    div[data-testid="metric-container"] div[data-testid="stMetricValue"] {
+        color: #0F172A;
+        font-weight: 700;
     }
     
-    /* Form Glassmorphism Background */
+    /* Form Container */
     div[data-testid="stForm"] {
-        background: rgba(18, 18, 18, 0.7);
-        backdrop-filter: blur(12px);
-        border-radius: 16px;
-        padding: 25px;
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        padding: 2rem;
+        border: 1px solid #E2E8F0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     }
     
-    /* Sidebar Blur */
+    /* Sidebar styling */
     section[data-testid="stSidebar"] {
-        background-color: rgba(10, 10, 10, 0.95) !important;
-        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: #FFFFFF !important;
+        border-right: 1px solid #E2E8F0;
     }
 </style>
 """, unsafe_allow_html=True)
