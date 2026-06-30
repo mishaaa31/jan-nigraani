@@ -1,0 +1,10 @@
+streamlit
+streamlit-folium
+pandas
+ultralytics
+torch
+transformers
+folium
+requests
+sentencepiece
+opencv-python-headless
