@@ -23,48 +23,69 @@ st.set_page_config(page_title="Jan-Nigraani", layout="wide")
 st.markdown("""
 <style>
     /* Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
     
     html, body, [class*="css"]  {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Outfit', sans-serif;
     }
     
-    /* Modern Headers */
+    /* Modern Headers with Gradients */
     h1, h2, h3 {
-        color: #1E3A8A;
-        font-weight: 600;
+        background: -webkit-linear-gradient(45deg, #00F0FF, #0057FF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 800;
+        letter-spacing: -0.5px;
     }
     
-    /* Sleek buttons */
+    /* Sleek Glow Buttons */
     .stButton>button {
-        background-color: #2563EB;
+        background: linear-gradient(90deg, #00F0FF 0%, #0057FF 100%);
         color: white;
-        border-radius: 8px;
-        padding: 0.5rem 1rem;
+        border-radius: 12px;
+        padding: 0.6rem 1.2rem;
         border: none;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
+        box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+        transition: all 0.3s ease-in-out;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
     .stButton>button:hover {
-        background-color: #1D4ED8;
-        transform: translateY(-2px);
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 0 0 25px rgba(0, 240, 255, 0.7);
     }
     
-    /* Metric Cards */
+    /* Glassmorphism Metric Cards */
     div[data-testid="metric-container"] {
-        background-color: #F8FAFC;
-        border: 1px solid #E2E8F0;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        background: rgba(18, 18, 18, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        transition: transform 0.3s ease;
+    }
+    div[data-testid="metric-container"]:hover {
+        transform: translateY(-5px);
+        border: 1px solid rgba(0, 240, 255, 0.3);
     }
     
-    /* Form Background */
+    /* Form Glassmorphism Background */
     div[data-testid="stForm"] {
-        background: #F1F5F9;
-        border-radius: 12px;
-        padding: 20px;
-        border: 1px solid #CBD5E1;
+        background: rgba(18, 18, 18, 0.7);
+        backdrop-filter: blur(12px);
+        border-radius: 16px;
+        padding: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+    
+    /* Sidebar Blur */
+    section[data-testid="stSidebar"] {
+        background-color: rgba(10, 10, 10, 0.95) !important;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
     }
 </style>
 """, unsafe_allow_html=True)
