@@ -31,7 +31,7 @@ st.markdown("""
     
     /* Background Image */
     [data-testid="stAppViewContainer"] {
-        background-image: linear-gradient(rgba(248, 250, 252, 0.88), rgba(248, 250, 252, 0.92)), url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=2064&auto=format&fit=crop');
+        background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=2064&auto=format&fit=crop');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -39,7 +39,7 @@ st.markdown("""
     
     /* Professional Headers */
     h1, h2, h3 {
-        color: #1E293B;
+        color: #F8FAFC;
         font-weight: 700;
         letter-spacing: -0.5px;
         margin-bottom: 1rem;
@@ -47,52 +47,54 @@ st.markdown("""
     
     /* Clean Trustworthy Buttons */
     .stButton>button {
-        background-color: #2563EB;
+        background-color: #3B82F6;
         color: white;
         border-radius: 6px;
         padding: 0.5rem 1.5rem;
-        border: 1px solid #1D4ED8;
-        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        border: 1px solid #2563EB;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         font-weight: 600;
         transition: all 0.2s;
     }
     .stButton>button:hover {
-        background-color: #1D4ED8;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        background-color: #2563EB;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     }
     
-    /* Crisp Metric Cards */
+    /* Crisp Metric Cards - Dark Glassmorphism */
     div[data-testid="metric-container"] {
-        background-color: #FFFFFF;
-        border: 1px solid #E2E8F0;
+        background-color: rgba(30, 41, 59, 0.8);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
         padding: 1.2rem;
         border-radius: 8px;
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-        border-left: 4px solid #2563EB;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        border-left: 4px solid #3B82F6;
     }
     div[data-testid="metric-container"] label {
-        color: #64748B !important;
+        color: #94A3B8 !important;
         font-weight: 500;
         font-size: 0.9rem;
     }
     div[data-testid="metric-container"] div[data-testid="stMetricValue"] {
-        color: #0F172A;
+        color: #F8FAFC;
         font-weight: 700;
     }
     
     /* Form Container */
     div[data-testid="stForm"] {
-        background-color: #FFFFFF;
+        background-color: rgba(30, 41, 59, 0.8);
+        backdrop-filter: blur(8px);
         border-radius: 8px;
         padding: 2rem;
-        border: 1px solid #E2E8F0;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     }
     
     /* Sidebar styling */
     section[data-testid="stSidebar"] {
-        background-color: #FFFFFF !important;
-        border-right: 1px solid #E2E8F0;
+        background-color: rgba(15, 23, 42, 0.95) !important;
+        border-right: 1px solid rgba(255, 255, 255, 0.05);
     }
 </style>
 """, unsafe_allow_html=True)
