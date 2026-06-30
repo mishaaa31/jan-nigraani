@@ -3,12 +3,8 @@ import sys
 import subprocess
 
 # --- STREAMLIT CLOUD OPENCV FIX ---
-# Uninstall broken OpenCV and install headless version if cv2 fails to import
-try:
-    import cv2
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "uninstall", "-y", "opencv-python", "opencv-python-headless"])
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "opencv-python-headless"])
+# We now rely on packages.txt for libgl1-mesa-glx
+import cv2
 
 import streamlit as st
 import utils
