@@ -29,6 +29,14 @@ st.markdown("""
         font-family: 'Inter', sans-serif;
     }
     
+    /* Background Image */
+    [data-testid="stAppViewContainer"] {
+        background-image: linear-gradient(rgba(248, 250, 252, 0.88), rgba(248, 250, 252, 0.92)), url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=2064&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
     /* Professional Headers */
     h1, h2, h3 {
         color: #1E293B;
